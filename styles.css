@@ -190,6 +190,14 @@ h1 {
 }
 
 @media (min-width: 1000px) {
+  .grid__row {
+    flex-direction: row;
+  }
+  .grid--col-6 {
+    
+    width: 50%;
+  }
+
   .card--col-4 { 
     width: 33.33%;
     padding-right: 10px;
@@ -197,3 +205,4 @@ h1 {
 
   } 
 }
+
