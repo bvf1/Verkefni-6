@@ -55,6 +55,8 @@ h1 {
   padding-left: 10px;
 }
 
+
+
 /* TODO setja upp grid fyrir >= 1000px */
 
 
@@ -62,6 +64,10 @@ h1 {
 @media (max-width: 999px) {
   .grid--last-item {
     order: 2;
+  }
+
+  .grid__text {
+    margin-top: 10px;
   }
 }
 
@@ -73,7 +79,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: #eee;
+  
 }
 
 /* TODO útfæra grid fyrir cards */
@@ -177,6 +183,7 @@ h1 {
   
   .card--col-6 {
     width: 50%;
+    margin-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -207,6 +214,11 @@ h1 {
   .grid__row {
     flex-direction: row;
   }
+
+  .grid__col {
+    margin-bottom: 40px;
+  }
+
   .grid--col-6 {
     
     width: 50%;
