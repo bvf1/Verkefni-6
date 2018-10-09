@@ -20,7 +20,11 @@ main {
   padding-right: 20px;
 }
 
-/* TODO taka ætti padding af main þegar komið er fyrir ofan hámarksbreidd */
+/*taka  padding af main þegar komið er fyrir ofan hámarksbreidd */
+@media (min-width: 1490) {
+  padding-left: -20px;
+  padding-right: -20px;
+}
 
 h1 {
   text-align: center;
@@ -40,7 +44,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* grid fyrir efni, setja þarf upp í html */
+/* grid fyrir efni */
 
 .grid__row {
   display: flex;
@@ -59,36 +63,44 @@ h1 {
 
 /* TODO setja upp grid fyrir >= 1000px */
 
-
-/* TODO koma mynd fyrir á öðrum stað í < 1000px */
-@media (max-width: 999px) {
-  .grid--last-item {
-    order: 2;
+@media (min-width: 1000px) {
+  .grid__row {
+    flex-direction: row;
   }
 
-  .grid--bil-bottom {
-    margin-top: 10px;
+  .grid__col {
+    margin-bottom: 40px;
   }
+
+  .grid--col-6 {
+    
+    width: 50%;
+  }
+
+  .card--col-4 { 
+    width: 33.33%;
+    padding-right: 10px;
+    padding-left: 10px;
+
+  } 
 }
 
 
+@media (max-width: 999px) {
+  .grid--last-item {
+    order: 4;
+  }
 
-/* grid fyrir cards */
+  .grid--bil-top {
+    padding-top: 22px;
+  }
+}
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
-
-/* TODO útfæra grid fyrir cards */
-
-/*
-  .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan responsive stíla og
-  að það fær `height: 100%;`
-  Sýnilausn verður gefin út við lok dags miðvikudaginn 3. okt
-*/
 
  .card {
    display: flex;
@@ -134,10 +146,6 @@ h1 {
   align-items: center;
   list-style: none;
 }
-
-
-
-
 
 .card__tags {
   font-weight: bold;
@@ -210,30 +218,7 @@ h1 {
 
 }
 
-@media (min-width: 1000px) {
-  .grid__row {
-    flex-direction: row;
-  }
 
-  .grid__col {
-    margin-bottom: 40px;
-  }
 
-  .grid--col-6 {
-    
-    width: 50%;
-  }
 
-  .card--col-4 { 
-    width: 33.33%;
-    padding-right: 10px;
-    padding-left: 10px;
-
-  } 
-}
-
-@media (min-width: 1490) {
-  padding-left: -20px;
-  padding-right: -20px;
-}
 
