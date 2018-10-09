@@ -96,6 +96,23 @@ h1 {
   }
 }
 
+/* grid fyrir cards */
+
+.card__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.card__col {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +122,7 @@ h1 {
  .card {
    display: flex;
    flex-direction: column;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
    overflow: hidden;
    background-color: #fff;
    word-break: break-word;
@@ -181,19 +198,11 @@ h1 {
 
 @media (min-width: 700px) {
   
-
-  .card__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
   
   .card--col-6 {
     width: 50%;
     margin-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+
   }
 
   .cards {
@@ -214,8 +223,14 @@ h1 {
     padding-left: 20px;
     flex: 0 0 150px;
   }
+}
 
-
+@media (min-width: 1000px) {
+  .card--col-4 { 
+    width: 33.33%;
+    padding-right: 10px;
+    padding-left: 10px;
+  } 
 }
 
 
