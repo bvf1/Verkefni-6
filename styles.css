@@ -57,7 +57,13 @@ h1 {
 
 /* TODO setja upp grid fyrir >= 1000px */
 
+
 /* TODO koma mynd fyrir á öðrum stað í < 1000px */
+@media (max-width: 999px) {
+  .grid--last-item {
+    order: 2;
+  }
+}
 
 
 
