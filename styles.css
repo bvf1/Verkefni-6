@@ -187,7 +187,13 @@ h1 {
     border: 2px solid #aaa;
     border-radius: 5px;
   }
+}
 
-  
+@media (min-width: 1000px) {
+  .card--col-4 { 
+    width: 33.33%;
+    padding-right: 10px;
+    padding-left: 10px;
 
-  }
+  } 
+}
